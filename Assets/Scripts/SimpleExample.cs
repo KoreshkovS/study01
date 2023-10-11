@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SimpleExample : MonoBehaviour
 {
+    //скрипт: наш обʼєкт рухається за обраним обʼєктом
+
     [SerializeField] private Transform _objToFolow;
 
     private Vector3 _deltaPos;

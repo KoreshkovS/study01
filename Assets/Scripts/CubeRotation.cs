@@ -12,4 +12,5 @@ public class CubeRotation : MonoBehaviour
         Quaternion deltaRotation = Quaternion.Euler(_rotation * Time.deltaTime);
         _rb.MoveRotation(_rb.rotation * deltaRotation);
     }
+    
 }
