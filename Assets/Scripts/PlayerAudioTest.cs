@@ -4,5 +4,10 @@ using UnityEngine;
 
 public class PlayerAudioTest : MonoBehaviour
 {
-    [SerializeField] private AudioSource _collisionSound;   
+    [SerializeField] private AudioSource _collisionSound;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        _collisionSound.Play();
+    }
 }
