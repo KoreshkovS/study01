@@ -6,7 +6,11 @@ public class PlayerAudioTest : MonoBehaviour
 {
     [SerializeField] private AudioSource _collisionSound;
 
-    private void OnCollisionEnter(Collision collision)
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    _collisionSound.Play();
+    //}
+    private void OnTriggerEnter(Collider other)
     {
         _collisionSound.Play();
     }
